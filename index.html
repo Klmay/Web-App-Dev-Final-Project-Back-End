@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="school.css" rel="stylesheet">
     <script src="scripts/showdate.js" defer></script>
+   
+    
     <title>Course Management</title>
 </head>
 <body>
@@ -16,6 +18,8 @@
         <a href="index.html">Home</a> &nbsp; 
         <a href="student.html">Student Portal Login</a> &nbsp; 
 	      <a href="teacher.html">Teacher Portal Login</a>
+        <a href="addClass.html">Course Addition</a>
+    </nav>
     </nav>
     <div id="wrapper">
     
@@ -25,33 +29,17 @@
     <p>Paragraph 1</p>
     </section>
     <div id="courseList">
-    <table>
-    <tr>
-      <th>Class</th>
-      <th>Teacher</th>
-      <th>Credit Hours</th>
-    </tr>
-    <tr>
-      <td class="text">Math</td>
-      <td class="text">Bob</td>
-      <td class="text">3</td>
-    </tr>
-    <tr>
-      <td class="text">Web Dev</td>
-      <td class="text">Nat</td>
-      <td class="text">3</td>
-    </tr>
-    <tr>
-      <td class="text">JavaScript</td>
-      <td class="text">Tim</td>
-      <td class="text">3</td>
-    </tr>
-    <tr>
-      <td class="text">Chemistry</td>
-      <td class="text">Steve</td>
-      <td class="text">3</td>
-    </tr>
-  </table>
+     <table border="1">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Credit Hours</th>
+            <th>Teacher</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="list_of_class"></tbody>
+</table>
   </div>
   
 </main>

@@ -15,12 +15,14 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-     "start": "node app",
-     "dev": "nodemon app"
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "dependencies": {
+    "body-parser": "^2.2.2",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "jwt-simple": "^0.5.6",
     "mongoose": "^9.2.1",
     "nodemon": "^3.1.11"
   }
