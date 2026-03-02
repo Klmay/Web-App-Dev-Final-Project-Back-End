@@ -1,16 +1,22 @@
-* { box-sizing: border-box; }
-body {  font-family:"Inter", "Segoe UI", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-image: linear-gradient(to bottom, #7eb381, #FFFFFF);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #000000;
-        font-size: 1em;
+* { 
+    box-sizing: border-box; 
+}
+
+body {  
+    font-family:"Inter", "Segoe UI", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #7eb381, #FFFFFF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+    font-size: 1em;
 }
 main {
+    width: 50%;
+    max-width: 900px;
     display: block;
     padding-left: 2em;
     padding-right: 2em;
@@ -22,28 +28,28 @@ main {
 }
 
 header {
-        background-color: #00441a;
-        padding: 1.5em;
-        text-align: center;
+    background-color: #00441a;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
-h1 {
+h1, h2{
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 0;
 }
 
 nav {
     margin: 0;
-    margin: 0;
+    margin-bottom: 1em;
+    padding: 0.8em 0;
     border: none;
     font-size: 1.2em;
     font-weight: 500;
-    font-weight: 500;
     text-align: center;
-    text-decoration: none;
     text-decoration: none;
     background-color: #088022;
 }
@@ -52,68 +58,72 @@ nav a {
     margin: 0 20px;
 }
 
-nav a {
-    margin: 0 20px;
+header a:link {
+    color:#ffffff;
+    text-decoration: none;
 }
 
-header a:link {
-    color:#000000;
-}
 header a:hover {
-    color:#000000;
+    color:#ffffff;
+    text-decoration: none;
 }
+
 header a:visited {
-    color:#000000;
+    color:#ffffff;
+    text-decoration: none;
 }
 
 nav a:link {
     color:#ffffff;
-    color:#ffffff;
+    text-decoration: none;
 }
+
 nav a:hover {
-    color:#000000;
-    text-decoration: underline;
-    text-decoration: underline;
+    color:#ffffff;
+    text-decoration: none;
 }
+
 nav a:visited {
-    color:#000000;
+    color:#ffffff;
+    text-decoration: none;
 }
 
 footer {
-        margin-top: 40px;
-        margin-top: 40px;
-        text-align: center;
-        font-size: .70em;
-        font-style: italic;
-        color: #777777;
-        border-top: 1px solid #ffffff;
-        color: #777777;
-        border-top: 1px solid #ffffff;
-        padding: 3em;
+    margin-top: 40px;
+    text-align: center;
+    font-size: .70em;
+    font-style: italic;
+    color: #777777;
+    border-top: 1px solid #ffffff;
+    padding: 3em;
 }
 
 #wrapper {
     min-height: 100vh;
     width: 80%;
-    margin:auto;
+    margin: 2em auto;
+    padding: 2em;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    border-radius: 12px;
 }
 
 section {
-      padding-left: .5em;
-      padding-right: .5em;
-      margin-top: 24px;
-      margin-top: 24px;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 24px;
+    margin-top: 24px;
 }
 
 table { 
-    margin: auto;
+    margin: 1.5em auto;
+    max-width: 700px;
     border: 1px solid #000000;
     border-radius: 8px;
-    width: 10%;
+    width: 100%;
     text-align: center;
     border-collapse: collapse;
     overflow: hidden;
@@ -121,20 +131,30 @@ table {
 
 td, th 
 {
-      padding: 15px;
-      border: 1px solid #033507;
+    padding: 15px;
+    border: 1px solid #033507;
 }
+
 td
 {
-      text-align: center;
+    text-align: center;
 }
+
 .text
 {
-      text-align: center;
+    text-align: center;
 }
-tr:nth-of-type(odd) { background-color: #8ab378;}
+
+tr:nth-of-type(odd) { 
+    background-color: #8ab378;
+}
+
 tr:nth-child(even) {
     background: #f3f7f9;
+}
+
+tr:hover {
+    background-color: #d7ead8;
 }
 
 .content-box {
@@ -175,4 +195,20 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        width: 95%;
+        padding: 1em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
 }

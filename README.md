@@ -10,24 +10,23 @@ This is a full-stack web-application project that is designed to a school course
 * Fully functional navigation bar with working links<br> that properly navigates between correct pages.
 * Course field requirements: 
     * Name of Course
-    * Description (?)
+    * Description 
     * Subject
-    * Credit Hours (?)
+    * Credit Hours
     * Whatever else may need to go in this list
-    *Can include images or a video of the functionality on the site if we wish*
 
 #### :student:Student Functionality
 * **Search** for courses by **name** or **course number**.
 * **Add** courses to their schedule.
 * **Drop** courses from thier schedule.
 * View a page that displays all courses the **student** is currently taking.
-*Can include images or a video of the functionality on the site if we wish*
+
 
 #### :teacher:Teacher Functionality
 * Can **create** new courses.
 * Can **remove** courses from the registration.
 * Can **edit** the existing courses. 
-*Can include images or a video of the functionality on the site if we wish*
+
 
 ### :keyboard:Technologies Utilized
 * Front-End: HTML / CSS / JavaScript
@@ -38,13 +37,6 @@ This is a full-stack web-application project that is designed to a school course
 ### :books:Can include a diagram of the organized file if we want
 
 ## :computer:Group Member Names and Roles
-**Gage Catron**: 
-**Kylin May**:
-**Ethan DeMougin**:
-
-### :green_circle:How To (if we want to have this, we don't really need to have I don't think)
-1. 
-2. 
-3. 
-
-Can obivously be tweeked but good framework just to start.
+**Gage Catron**: <br>
+**Kylin May**: <br>
+**Ethan DeMougin**: <br>
