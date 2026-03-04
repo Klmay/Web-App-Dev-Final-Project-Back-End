@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="school.css" rel="stylesheet">
+    <script src="scripts/StudentShowToAdd.js" defer></script>
+     
+      
+   
+    
+    <title> Class Management for Students</title>
+</head>
+<body>
+    <header>
+    <h1>School of Rock</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> &nbsp; 
+        <a href="student.html">Student Portal Login</a> &nbsp; 
+	      <a href="teacher.html">Teacher Portal Login</a>
+        <a href="addClass.html">Course Addition</a>
+    </nav>
+    </nav>
+    <div id="wrapper">
+
+<main>
+    <section>
+    <h2>Course List</h2>
+   
+    </section>
+    <div id="courseList">
+     <table border="1">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Credit Hours</th>
+            <th>Teacher</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="list_of_class"></tbody>
+</table>
+  </div>
+
+   <div>
+  <h2>Delete A Class</h2>
+   <form>
+        <select id="classDropDown"></select>
+        <input type="button" value="Delete" id="deleteBtn">
+        <div id="error"></div>
+    </form>
+    </div>
+</main>
+<div>
+     <input type="button" value="LogOut" id="logout">
+</div>
+<footer>
+  Copyright &copy; 2026 This is a School Project <br />
+</footer>
+</div>
+</body>
+</html>
