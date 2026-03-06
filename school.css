@@ -242,6 +242,20 @@ button {
   cursor: pointer;
 }
 
+body.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.login-page .register-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     #wrapper {
         width: 95%;
