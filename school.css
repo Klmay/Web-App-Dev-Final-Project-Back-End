@@ -3,7 +3,7 @@
 }
 
 body {  
-    font-family:"Inter", "Segoe UI", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
-h1, h2{
+h1, h2 {
     text-align: center;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -40,8 +40,10 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
     background-color: #088022;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px #033507;
 }
 
 nav a {
@@ -66,16 +68,27 @@ header a:visited {
 nav a:link {
     color:#ffffff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
     color:#ffffff;
     text-decoration: none;
+    transform: translateY(-4px);
 }
 
 nav a:visited {
     color:#ffffff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 footer {
@@ -172,8 +185,8 @@ input[type="text"],
 input[type="number"], 
 select {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5pc;
     font-size: 1em;
     width: 100%;
 }
@@ -196,7 +209,7 @@ input[type="button"]:hover {
 }
 
 #logout {
-    background-color: #666;
+    background-color: #00773c;
     max-width: 150px;
     display: block;
     margin: 20px auto;
@@ -238,7 +251,7 @@ button {
   background-color: #15913e;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 5pc;
   cursor: pointer;
 }
 
@@ -254,6 +267,39 @@ body.login-page .register-footer {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+}
+
+.edit-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.edit-page form {
+    background-color: #8ab378;
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.edit-page form div{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-page label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.edit-page input,
+.edit-page input[type="number"] {
+    padding: 12px;
+    border-radius: 5pc;
 }
 
 @media (max-width: 600px) {
